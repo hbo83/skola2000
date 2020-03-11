@@ -64,6 +64,12 @@
       >
         <v-icon>mdi-hexagon-outline</v-icon>
       </v-btn>
+      <v-btn
+        icon
+        @click.stop="miniVariant = !miniVariant"
+      >
+        <v-icon>mdi-circle</v-icon>
+      </v-btn>
 
     </v-app-bar>
     <div class="subNav" style="width: 100%; height: 50px; margin: 80px 0 0 50px;">
@@ -91,6 +97,19 @@
         to="workshop"
       >
         <v-icon>mdi-magnet</v-icon>
+      </v-btn>
+
+      <v-btn
+        icon
+        to="actions"
+      >
+        <v-icon>mdi-calendar-clock</v-icon>
+      </v-btn>
+      <v-btn
+        icon
+        to="documents"
+      >
+        <v-icon>mdi-file-document</v-icon>
       </v-btn>
     </div>
     <v-content>
