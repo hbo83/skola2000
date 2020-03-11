@@ -11,7 +11,7 @@ export default {
 </script>
 <style scoped>
 .header {
-    background-color: pink;
+    background-color: green;
     width: 100%;
     height: 50px;
 }

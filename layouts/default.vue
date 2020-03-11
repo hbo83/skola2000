@@ -28,89 +28,171 @@
       :clipped-left="clipped"
       fixed
       app
-      color="red"
+      color="green"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
 
       <v-spacer />
-      <v-btn
+      <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn
+        v-on="on"
         icon
         to="parlament"
       >
         <v-icon>mdi-tie</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Žákovský parlament</span>
+    </v-tooltip>
+
+     <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn
+        v-on="on"
         icon
         @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-package-variant-closed</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Starý web</span>
+    </v-tooltip>
+
+<v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn
+        v-on="on"
         icon
         @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-panorama-wide-angle</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Školní inormační systém</span>
+    </v-tooltip>
+      
+<v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn
+        v-on="on"
         icon
         @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-email</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Webmail</span>
+    </v-tooltip>
+      
+      <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+         <v-btn
+         v-on="on"
         icon
         @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-hexagon-outline</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Bakaláři</span>
+    </v-tooltip>
+     
+     <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+         <v-btn
+         v-on="on"
         icon
         @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-circle</v-icon>
       </v-btn>
+      </template>
+      <span>Aplikace jídelna</span>
+    </v-tooltip>
+      
 
     </v-app-bar>
     <div class="subNav" style="width: 100%; height: 50px; margin: 80px 0 0 50px;">
-      
-       <v-btn
+      <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+         <v-btn
+         v-on="on"
         icon
         to="school"
       >
         <v-icon>mdi-city</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Škola</span>
+    </v-tooltip>
+
+     <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+          <v-btn
+          v-on="on"
         icon
         to="retinue"
       >
         <v-icon>mdi-panda</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Družina</span>
+    </v-tooltip>
+       
+     <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+          <v-btn
+          v-on="on"
         icon
         to="eatery"
       >
         <v-icon>mdi-silverware-variant</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Jídelna</span>
+    </v-tooltip>
+      
+      <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+          <v-btn
+          v-on="on"
         icon
         to="workshop"
       >
         <v-icon>mdi-magnet</v-icon>
       </v-btn>
-
-      <v-btn
+      </template>
+      <span>Dílny</span>
+    </v-tooltip>
+      
+<v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+          <v-btn
+          v-on="on"
         icon
         to="actions"
       >
         <v-icon>mdi-calendar-clock</v-icon>
       </v-btn>
-      <v-btn
+      </template>
+      <span>Akce</span>
+    </v-tooltip>
+      
+      <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+          <v-btn
+          v-on="on"
         icon
         to="documents"
       >
         <v-icon>mdi-file-document</v-icon>
       </v-btn>
+      </template>
+      <span>Dokumenty</span>
+    </v-tooltip>
+      
     </div>
     <v-content>
       <v-container>

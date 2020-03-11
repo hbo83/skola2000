@@ -3,7 +3,7 @@
         <v-row>
             <v-col cols="12">
       <h2>Dokumenty:</h2>
-      <v-btn outlined text color="grey">
+      <v-btn outlined text color="grey" to="documents/skolnirad">
         Školní řád
       </v-btn>
       <v-btn outlined text color="grey">
