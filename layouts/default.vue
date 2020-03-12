@@ -114,7 +114,21 @@
       
 
     </v-app-bar>
-    <div class="subNav" style="width: 100%; height: 50px; margin: 80px 0 0 50px;">
+    <div class="subNav" style="width: 100%; height: 50px; margin: 80px 10px 0 10px; border-bottom: 2px dotted green">
+    
+      <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+         <v-btn
+         v-on="on"
+        icon
+        to="news"
+      >
+        <v-icon>mdi-newspaper</v-icon>
+      </v-btn>
+      </template>
+      <span>Novinky</span>
+    </v-tooltip>
+
       <v-tooltip bottom>
       <template v-slot:activator="{ on }">
          <v-btn
@@ -192,7 +206,7 @@
       </template>
       <span>Dokumenty</span>
     </v-tooltip>
-      
+     <v-btn text disabled style="float: right">skola</v-btn>
     </div>
     <v-content>
       <v-container>
