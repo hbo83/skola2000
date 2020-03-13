@@ -3,7 +3,7 @@
     <v-row no-gutters>
       <v-col>
         <Documents />
-        <v-btn @click="pu">push</v-btn>
+        
         
       </v-col>
     </v-row>
@@ -24,19 +24,7 @@ export default {
      Documents
   },
   methods: {
-      pu() {
-          this.$router
-        .push({
-          name: "_id",
-          params: {
-            id: shortcut
-            // data: sc
-          }
-        })
-        .catch(err => {
-          "nejaka chyba";
-        });
-    }
+     
       }
   }
 

@@ -115,7 +115,8 @@
 
     </v-app-bar>
     <div class="subNav" style="width: 100%; height: 50px; margin: 80px 10px 0 10px; border-bottom: 2px dotted green">
-    
+    <v-row>
+      <v-col>
       <v-tooltip bottom>
       <template v-slot:activator="{ on }">
          <v-btn
@@ -206,7 +207,13 @@
       </template>
       <span>Dokumenty</span>
     </v-tooltip>
-     <v-btn text disabled style="float: right">skola</v-btn>
+      </v-col>
+      <v-col>
+     <h2 style="text-align: center">{{"Škola"}}</h2>
+      </v-col>
+      <v-col>
+      </v-col>
+    </v-row>
     </div>
     <v-content>
       <v-container>
@@ -247,6 +254,14 @@ export default {
       
       title: 'Základní škola Úšovice Mariánské Lázně'
     }
+  },
+  methods: {
+    get_title(path) {
+    if(path === "school") return "Škola"
+    }
+  },
+  mounted() {
+    // alert($route.path)
   }
 }
 </script>
